@@ -48,6 +48,9 @@ function formatText(type) {
   updatePreview();
 }
 
+function toggleTheme() {
+  document.body.classList.toggle("light");
+}
 
 // update in real-time
 editor.addEventListener("input", updatePreview);
