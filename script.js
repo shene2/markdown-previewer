@@ -18,6 +18,23 @@ function updatePreview() {
   preview.innerHTML = marked.parse(markdownText);
 }
 
+function formatText(type) {
+  let text = editor.value;
+
+  if (type === "bold") {
+    editor.value += `\n**bold text**`;
+  } else if (type === "italic") {
+    editor.value += `\n*italic text*`;
+  } else if (type === "h1") {
+    editor.value += `\n# Heading`;
+  } else if (type === "code") {
+    editor.value += `\n\`\`\`\ncode here\n\`\`\``;
+  }
+
+  updatePreview();
+}
+
+
 // update in real-time
 editor.addEventListener("input", updatePreview);
 
