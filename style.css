@@ -47,3 +47,14 @@ textarea {
   cursor: pointer;
   border-radius: 6px;
 }
+
+.light {
+  background: #f8fafc;
+  color: #020617;
+}
+
+.light textarea,
+.light #preview {
+  background: #ffffff;
+  color: #020617;
+}
