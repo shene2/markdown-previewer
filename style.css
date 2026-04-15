@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+textarea {
+  width: 50%;
+  padding: 20px;
+  background: #020617;
+  color: #e2e8f0;
+  border: none;
+  outline: none;
+  resize: none;
+  font-size: 16px;
+}
+
+#preview {
+  width: 50%;
+  padding: 20px;
+  overflow-y: auto;
+  background: #020617;
+}
