@@ -58,6 +58,12 @@ function copyHTML() {
   alert("HTML copied!");
 }
 
+function clearEditor() {
+  editor.value = "";
+  updatePreview();
+  localStorage.removeItem("markdown");
+}
+
 // update in real-time
 editor.addEventListener("input", updatePreview);
 
