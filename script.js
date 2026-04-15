@@ -13,6 +13,20 @@ editor.value = `Welcome 👋
 *Italic text*
 `;
 
+// Load saved text
+window.onload = () => {
+  const saved = localStorage.getItem("markdown");
+  if (saved) {
+    editor.value = saved;
+    updatePreview();
+  }
+};
+
+// Save on input
+editor.addEventListener("input", () => {
+  localStorage.setItem("markdown", editor.value);
+});
+
 function updatePreview() {
   const markdownText = editor.value;
   preview.innerHTML = marked.parse(markdownText);
