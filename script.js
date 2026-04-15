@@ -52,6 +52,12 @@ function toggleTheme() {
   document.body.classList.toggle("light");
 }
 
+function copyHTML() {
+  const htmlContent = preview.innerHTML;
+  navigator.clipboard.writeText(htmlContent);
+  alert("HTML copied!");
+}
+
 // update in real-time
 editor.addEventListener("input", updatePreview);
 
