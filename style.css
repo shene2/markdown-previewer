@@ -27,3 +27,23 @@ textarea {
   overflow-y: auto;
   background: #020617;
 }
+
+.toolbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #020617;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  border-bottom: 1px solid #1e293b;
+}
+
+.toolbar button {
+  background: #1e293b;
+  color: #e2e8f0;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 6px;
+}

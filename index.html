@@ -8,6 +8,15 @@
 </head>
 <body>
 
+  <div class="toolbar">
+  <button onclick="formatText('bold')">B</button>
+  <button onclick="formatText('italic')">I</button>
+  <button onclick="formatText('h1')">H1</button>
+  <button onclick="formatText('code')">{ }</button>
+  <button onclick="clearEditor()">Clear</button>
+  <button onclick="copyHTML()">Copy HTML</button>
+</div>
+
   <div class="container">
     <textarea id="editor" placeholder="Write Markdown here..."></textarea>
     <div id="preview"></div>

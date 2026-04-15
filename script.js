@@ -2,7 +2,7 @@ const editor = document.getElementById("editor");
 const preview = document.getElementById("preview");
 
 // default text
-editor.value = `# Welcome 👋
+editor.value = `Welcome 👋
 
 ## This is your Markdown Previewer
 
